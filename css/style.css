@@ -1,0 +1,256 @@
+.container {
+    background-color: #23272a
+}
+
+.nav {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#form_example {
+    margin-top: 5px;
+    color: whitesmoke;
+    background: transparent;
+
+}
+
+#sort {
+    background: black;
+    color: whitesmoke;
+    border: none;
+    margin-right: 20px;
+}
+
+#edit-user-form {
+    border: whitesmoke;
+    color: whitesmoke;
+}
+
+#sort option {
+    background: black;
+    color: whitesmoke;
+    border: none;
+}
+
+form input {
+    background: transparent;
+}
+
+label, p, h1, h2, h3, h4, h5, h6 {
+    color: whitesmoke;
+}
+
+.form-control {
+    background: transparent;
+    color: whitesmoke;
+}
+
+#sign-in-form label {
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-dark {
+    background-color: transparent;
+}
+
+.row {
+    align-items: center;
+}
+
+.navbar-brand {
+    margin: 5px;
+    justify-content: flex-start;
+}
+
+.btn-primary:hover {
+    animation: flicker-update 1.5s infinite alternate-reverse;
+    transition: none;
+    transform: none;
+    color: #1dbce8;
+    background: transparent;
+}
+
+.btn-danger:hover {
+    animation: flicker-remove 1.5s infinite alternate;
+    transition: none;
+    transform: none;
+    color: crimson;
+    background: transparent;
+}
+
+#clock {
+    color: whitesmoke;
+    margin-right: 10px;
+
+}
+
+
+#form {
+    cursor: grab;
+}
+
+img {
+    width: 100%;
+}
+
+#date, #clock {
+    float: right;
+    padding-right: 5px;
+}
+
+body {
+    background-color: #171B1CFF;
+}
+
+.card p, .card h5 {
+    color: whitesmoke;
+}
+
+.card {
+    background-color: transparent;
+    border-color: whitesmoke;
+    box-shadow: 10px 10px 39px rgb(100, 100, 100);
+    border-radius: 12px;
+}
+
+nav {
+    box-shadow: 0 0 5px 0;
+    background: inherit;
+}
+
+
+.btn-primary {
+    color: #1dbce8;
+    background: transparent;
+    border-color: #1dbce8;
+}
+
+.btn-danger {
+    color: #871282;
+    background: transparent;
+    border-color: #871282;
+}
+
+svg {
+    margin-left: -5px;
+    margin-top: 1px;
+}
+
+button.dark-mode {
+    float: right;
+}
+
+
+.card {
+    text-decoration: none;
+    margin-bottom: 5px;
+
+}
+
+.col-xl-3 {
+    color: whitesmoke;
+}
+
+#user-card .btn {
+    margin-bottom: 10px;
+}
+#user-card:hover {
+    animation: flicker 2s alternate-reverse;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    Animation: flicker 1.5s infinite alternate;
+    z-index: 100;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+}
+
+.navbar-brand {
+    font-size: 16px;
+    font-weight: 200;
+    font-style: italic;
+    color: #fff;
+    padding: 6.4px 9.6px 8px;
+    border: 1.6px solid #fff;
+    border-radius: 32px;
+    text-transform: uppercase;
+    Animation: flicker-logo 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+        box-shadow: 1px 1px 5px rgba(232, 73, 29, 99),
+        3px 3px 9px rgba(232, 73, 29, 89),
+        5px 5px 15px rgba(232, 73, 29, .79),
+        5px 5px 10px rgba(255, 95, 45, .59),
+        5px 5px 10px rgba(255, 95, 31, .29),
+        5px 5px 30px rgba(255, 95, 31, .19),
+        5px 5px 30px rgba(255, 95, 31, .09);
+
+    }
+
+    17%, 20%, 24%, 55% {
+        box-shadow: none;
+    }
+}
+
+@keyframes flicker-logo {
+
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+
+        box-shadow: 0 0 80px #fff,
+        inset 0 0 8px #fff,
+        0 0 32px #E8491D,
+        inset 0 0 32px #E8491D,
+        0 0 64px #E8491D,
+        inset 0 0 64px #E8491D;
+    }
+
+    20%, 24%, 55% {
+        text-shadow: none;
+        box-shadow: none;
+    }
+}
+
+@keyframes flicker-update {
+
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+
+        box-shadow: /*0 0 80px #fff,*/ 1px 3px 8px rgba(29, 188, 232, .7),
+        3px 5px 12px rgba(29, 188, 232, .6),
+        5px 7px 32px rgba(29, 188, 222, .4),
+        7px 9px 54px rgba(29, 188, 232, .3),
+        0 0 150px 25px rgba(29, 188, 232, .3);
+    }
+
+    20%, 24%, 55% {
+        text-shadow: none;
+        box-shadow: none;
+    }
+}
+
+@keyframes flicker-remove {
+
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+
+        box-shadow: 1px 3px 8px rgba(239, 13, 13, .79),
+        1px 3px 12px rgba(239, 13, 13, .69),
+        3px 5px 22px rgba(239, 13, 13, .49),
+        5px 7px 44px rgba(239, 13, 13, .39),
+        0 0 160px 25px rgba(239, 13, 13, .29);
+    }
+
+    20%, 24%, 55% {
+        box-shadow: none;
+    }
+}
+
